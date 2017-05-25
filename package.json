@@ -63,6 +63,7 @@
     "serve": "gulp serve",
     "start": "gulp serve",
     "test": "karma start",
+    "e2e": "protractor protractor.conf.js",
     "watch": "gulp serve",
     "webpack": "gulp webpack"
   },
