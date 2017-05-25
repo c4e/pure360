@@ -1,0 +1,22 @@
+@import "../../common/common";
+ 
+.emailList {
+  .list-group-item {
+    display: flex;
+    .name, .subject {
+      line-height: 34px;
+      text-align: left;
+    }
+    .name {
+      width: 20%;
+    }
+    .subject {
+      color: $darkTextColor;
+      width: 50%;
+    }
+    .actions {
+      text-align: right;
+      width: 30%;
+    }
+  }
+}

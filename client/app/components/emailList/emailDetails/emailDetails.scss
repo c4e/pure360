@@ -1,0 +1,18 @@
+.emailDetails {
+  .row {
+    display: flex;
+    .html-container {
+      margin: 0 auto;
+    }
+    strong {
+      padding-right: 5px;
+      margin-bottom: 15px;
+      width: 120px;
+      text-align: right;
+    }
+    .btn-group {
+      margin: 0 auto;
+
+    }
+  }
+}

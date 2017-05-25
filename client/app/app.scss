@@ -1,0 +1,10 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+@import "common/common";
+
+.app {
+  height: 100%;
+  .container {
+    margin-top: $marginTop;
+  }
+}
+

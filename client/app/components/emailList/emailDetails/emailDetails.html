@@ -1,0 +1,29 @@
+<div class="emailDetails">
+  <div class="row">
+    <strong>Message name: </strong><span ng-bind="$ctrl.email.name"></span>
+  </div>
+  <div class="row">
+    <strong>Subject line: </strong><span ng-bind="$ctrl.email.subjects.join(', ')"></span>
+  </div>
+  <div class="row">
+    <div class="btn-group" role="group">
+      <button type="button"
+              ng-class="{'active' : $ctrl.formatHTML}"
+              ng-click="$ctrl.formatHTML = true"
+              class="btn btn-default">
+        HTML
+      </button>
+      <button type="button"
+              ng-class="{'active' : !$ctrl.formatHTML}"
+              ng-click="$ctrl.formatHTML = false"
+              class="btn btn-default">
+        Plain Text
+      </button>
+    </div>
+  </div>
+  <br>
+  <div class="row well">
+    <div ng-if="$ctrl.formatHTML" class="html-container" ng-bind-html="$ctrl.email.body.html"></div>
+    <div ng-if="!$ctrl.formatHTML" ng-bind="$ctrl.email.body.text"></div>
+  </div>
+</div>
