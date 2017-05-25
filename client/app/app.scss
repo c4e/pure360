@@ -3,5 +3,8 @@
 
 .app {
   height: 100%;
+  .container {
+    margin-top: $marginTop;
+  }
 }
 

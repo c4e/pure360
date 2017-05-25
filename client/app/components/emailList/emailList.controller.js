@@ -1,6 +1,7 @@
 class EmailListController {
-  constructor() {
-    this.name = 'emailList';
+  constructor(EmailService) {
+    'ngInject';
+    this.emails = EmailService.emails;
   }
 }
 

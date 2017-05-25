@@ -1,3 +1,7 @@
-<div>
-  <h1>{{ $ctrl.name }}</h1>
-</div>
+<ul class="list-group emailList">
+  <li class="list-group-item" ng-repeat="email in $ctrl.emails | async:this">
+    <span class="name" ng-bind="email.name"></span>
+    <span class="subject" ng-bind="email.subjects.join(', ')"></span>
+    <span class="actions"><a class="btn btn-default" ui-sref="emailDetails({id: email.id})" role="button">More</a></span>
+  </li>
+</ul>
