@@ -9,3 +9,5 @@
   * starts a dev server via `webpack-dev-server`, serving the client folder.
 * `npm run e2e`
   * run protractor test
+* `npm run test`
+  * run unit testing
