@@ -1,3 +1,4 @@
+### Setup
 * `npm install -g protractor`
 * `npm install`
 
