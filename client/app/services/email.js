@@ -18,7 +18,7 @@ export class EmailService {
     .then((resp) => {
       let email = resp.data; 
       email.body.html = this.$sce.trustAsHtml(email.body.html);
-      return resp.data;
+      return email;
     });
   }
 }
