@@ -12,4 +12,6 @@
 * `npm run e2e`
   * run protractor test
 * `npm run test`
+  * webdriver-manager update
+  * webdriver-manager start
   * run unit testing
